@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>ZekoBet - En İyi Bahis ve Casino Platformu</title>
 
   <meta name="description" content="ZekoBet ile yüksek oranlar, binlerce bahis seçeneği, güncel giriş adresi, mobil destek ve geniş casino oyunları sizi bekliyor.">
@@ -39,19 +40,19 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
-      padding: 10px 0;
+      padding: 25px 0 10px;
       flex-wrap: wrap;
     }
 
     .logo {
-      max-width: 30%;
+      max-height: 100px;
       height: auto;
     }
 
     .login-button {
       background-color: #FFD700;
       color: black;
-      padding: 12px 25px;
+      padding: 14px 30px;
       text-decoration: none;
       font-weight: bold;
       border-radius: 6px;
@@ -59,8 +60,8 @@
     }
 
     .content {
-      margin: 0 auto 15px;
-      padding: 10px 15px;
+      margin: 10px auto 30px;
+      padding: 10px 20px 20px;
       max-width: 800px;
       text-align: center;
       line-height: 1.8;
@@ -68,25 +69,29 @@
       color: white;
     }
 
-    .image-row {
+    .promo-images {
       display: flex;
       justify-content: center;
       gap: 20px;
-      margin: 20px auto 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
     }
 
-    .image-row img {
-      width: 45%;
-      height: auto;
+    .promo-images img {
+      width: 100%;
+      max-width: 350px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
     }
 
     .social-icons {
       text-align: center;
-      padding: 10px 5px;
+      padding: 20px 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
+      gap: 15px;
     }
 
     .social-icons a img {
@@ -95,30 +100,38 @@
     }
 
     @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
       .logo {
-        max-width: 60%;
+        max-height: 80px;
       }
 
       .login-button {
         font-size: 1em;
-        padding: 10px 20px;
+        padding: 12px 25px;
       }
 
-      .image-row {
-        flex-direction: column;
-        align-items: center;
+      .promo-images img {
+        max-width: 100%;
+        height: auto;
       }
 
-      .image-row img {
-        width: 80%;
-        margin-bottom: 15px;
+      .social-icons a img {
+        height: 35px;
+      }
+
+      .content {
+        padding: 10px 15px 20px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo + Giriş -->
+  <!-- Logo + Giriş Butonu -->
   <div class="header">
     <img src="logo.png" alt="ZekoBet Logo" class="logo" />
     <a href="https://sht1.bet/social" class="login-button">Giriş</a>
@@ -130,12 +143,12 @@
     <p>✓ Kazanma sırası artık sizde! Bahis dünyasının standart kalıplarını yıkan ZEKOBET ile kazanmak umduğunuzdan çok daha kolay!</p>
     <p>✓ Binlerce bahis seçeneği, göz kamaştıran bahis oranları, en geniş casino oyunları arşivi ve çok daha fazlası!</p>
     <p>✓ Tek yapmanız gereken ZEKOBET’te bir üyelik açmak ve arkanıza yaslanıp keyfini çıkarmak!</p>
-  </div>
 
-  <!-- Görseller -->
-  <div class="image-row">
-    <img src="spor.webp" alt="Spor" />
-    <img src="cas.webp" alt="Casino" />
+    <!-- Spor ve Casino Görselleri -->
+    <div class="promo-images">
+      <img src="spor.webp" alt="Spor" />
+      <img src="cas.webp" alt="Casino" />
+    </div>
   </div>
 
   <!-- Sosyal Medya -->
